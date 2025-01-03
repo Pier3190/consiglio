@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup di Benvenuto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Se sei qui, hai bisogno di un consiglio!</h1>
+    <p>Premi il pulsante qui sotto.</p>
+    <button id="welcomeButton">Mostra Messaggio</button>
+
+    <script>
+        document.getElementById('welcomeButton').addEventListener('click', function() {
+            alert("Non piangere, resisti, manca poco alla pensione!");
+        });
+    </script>
+
+</body>
+</html>
